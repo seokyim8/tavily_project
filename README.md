@@ -1,6 +1,9 @@
 First Commit
 
-<h2>Objective: Create a personalized game recommendation webpage.</h2>
+<h2>Objective:</h2>
+
+To create a personalized game recommendation webpage using Tavily, OpenAI, Langraph, and Django.
+
 <h2>How to Use</h2>
 
 1) Clone the repository and add the python file "env.py" under the backend/agents directory (include your API keys to Tavily and OpenAI)
