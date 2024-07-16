@@ -29,6 +29,6 @@ class CollectorAgent:
         Combines the Tavily search result and saves it as part of the state.
         '''
         results = self.search_for_game(state["query"])
-        images = self.search_for_images(map(lambda x: x["title"], results))
+        images = self.search_for_images(map(lambda x: x["content"], results))
         return {"collected": results, "images": images}
     

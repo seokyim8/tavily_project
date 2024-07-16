@@ -36,7 +36,7 @@ class SelectorAgent:
                 '''
             }, {
                 "role": "user",
-                "content": f"Here is the information related to the game:\n {game}\n From here, generate a review."
+                "content": f"Here is the information related to the game:\n {game}\n Summarize this and generate a review."
             }]
 
             message = convert_openai_messages(prompt)
