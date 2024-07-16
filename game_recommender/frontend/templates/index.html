@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}" />
+</head>
+
+<body>
+
+    <div>
+        <h1>Access your personalized game recommendations!</h1>
+        <form action="/generate/" method="post">
+            {% csrf_token %}
+            <input id="query" type="text" name="query"></input>
+            <button>Press Here</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
